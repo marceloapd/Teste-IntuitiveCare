@@ -10,14 +10,16 @@ async function getDom(url){
 
 
 async function getDocument(path){
-    let firstDom = await getDom('http://www.ans.gov.br/prestadores/tiss-troca-de-informacao-de-saude-suplementar')
-    let pageDocument = firstDom.window.document.querySelector('.alert-link').href
+    console.log('Buscando arquivo...')
+    let firstDom = await getDom('https://www.gov.br/ans/pt-br/assuntos/prestadores/padrao-para-troca-de-informacao-de-saude-suplementar-2013-tiss')
+    let pageDocument = firstDom.window.document.querySelector('.callout').querySelector('a').href
 
     lastDom = await getDom(pageDocument)
-    let documentLink = lastDom.window.document.querySelector('.table-responsive').querySelector('a').href
-    
+    let documentLink = lastDom.window.document.querySelector('tbody').querySelector('a').href
+    console.log('Salvando arquivo...')
     await axios.get(documentLink, {responseType: "stream"}).then(function (response) {
         response.data.pipe(fs.createWriteStream(path));
+        console.log('Arquivo salvo!')
     });
 }
 
