@@ -6,7 +6,7 @@
 //  * @returns {Array} csv data
 //  */
 // function readCSV(file) {
-//     let fileContent = fs.readFileSync(file, { encoding: "utf8", flag: "r" })
+//     let fileContent = fs.readFileSync(file, { encoding: "utf-8", flag: "r" })
 //     let rows = fileContent.split("\n").slice(3)
 //     let { dataTemplate, dataColumns } = getTemplate()
 //     const csvContent = getCSVData(rows, dataTemplate, dataColumns)
@@ -66,10 +66,10 @@
 //     return data.replace(replacer, '')
 // }
 
-// const csvData = readCSV("../database/Relatorio_cadop.csv")
-// // Relatorio.bulkCreate(csvData).then((result)=>{
-// //     console.log(result)
-// // })
+// const csvData = readCSV("../database/Relatorio_cadop.txt")
+// Relatorio.bulkCreate(csvData).then((result)=>{
+//     console.log(result)
+// })
 // console.log(csvData)
 
 

@@ -4,7 +4,6 @@ const sequelize = require('../database/db.js');
 
 module.exports = {
     async searchDb(query){
-
         let search = await sequelize.query(
 
             `SELECT * FROM Relatorios 
@@ -55,6 +54,17 @@ module.exports = {
             }
         );
         return search
+    },
+
+    async getAllUf(){
+        let allUF = (await Relatorio.findAll({raw: true, attributes: [[sequelize.literal('DISTINCT `UF`'), 'UF']]})).filter((e) => e.UF)
+        return allUF
+    },
+
+    async getAllModalidades(){
+        let allModalidades = (await Relatorio.findAll({raw: true, attributes: [[sequelize.literal('DISTINCT `Modalidade`'), 'Modalidade']]})).filter((e) => e.Modalidade)
+        console.log(allModalidades)
+        return allModalidades
     }
 }
 // http://localhost:3000/search/?RegistroANS=&CNPJ=&RazaoSocial=&NomeFantasia=&Modalidade=&Logradouro=&Numero=&Complemento=&Bairro=&Cidade=&UF=&CEP=&DDD=&Telefone=&Fax=&EnderecoEletronico=&Representante=&CargoRepresentante=&DataRegistroANS=
