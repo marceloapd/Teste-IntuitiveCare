@@ -63,7 +63,6 @@ module.exports = {
 
     async getAllModalidades(){
         let allModalidades = (await Relatorio.findAll({raw: true, attributes: [[sequelize.literal('DISTINCT `Modalidade`'), 'Modalidade']]})).filter((e) => e.Modalidade)
-        console.log(allModalidades)
         return allModalidades
     }
 }

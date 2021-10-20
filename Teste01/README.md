@@ -4,7 +4,7 @@ Neste teste o candidato deverá criar um código (em uma das linguagens menciona
 
 #### Tarefas de código:
 
-- [x] Acessar o site: http://www.ans.gov.br/prestadores/tiss-troca-de-informacao-de-saude-suplementar;
+- [x] Acessar o site: https://www.gov.br/ans/pt-br/assuntos/prestadores padrao-para-troca-de-informacao-de-saude-suplementar-2013-tiss;
 - [x] Buscar a versão mais recente do Padrão TISS (arquivo - padrao_tiss_componente_organizacional_201902.pdf);
 - [x] Baixar o componente organizacional;
 
