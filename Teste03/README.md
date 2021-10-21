@@ -25,7 +25,7 @@ Criar scripts sql (MySQL 8.* ou Postgres >10.0) que execute as tarefas de códig
 
 ## Começando
 
-####Passo 1
+#### Passo 1
 
 Para começar vamos criar uma query para carregar o conteudo dos arquivos CSV
 
@@ -53,7 +53,7 @@ SELECT * FROM public.relatorio;
 ```
 Repita o codigo acima para cada arquivo dos últimos 2 anos no repositório público, no fim você tera o banco populado com todos os arquivos.
 
-####Passo 2
+#### Passo 2
 
 Agora vamos criar uma query similar para o segundo CSV
 
