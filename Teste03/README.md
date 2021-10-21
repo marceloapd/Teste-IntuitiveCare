@@ -29,7 +29,7 @@ Criar scripts sql (MySQL 8.* ou Postgres >10.0) que execute as tarefas de códig
 
 Para começar vamos criar uma query para carregar o conteudo dos arquivos CSV
 
-```
+```sql
 BEGIN;
     CREATE TABLE IF NOT EXISTS relatorio (
         DATA VARCHAR(20),
@@ -57,7 +57,7 @@ Repita o codigo acima para cada arquivo dos últimos 2 anos no repositório púb
 
 Agora vamos criar uma query similar para o segundo CSV
 
-```
+```sql
 BEGIN;
 
     CREATE TABLE IF NOT EXISTS cadop (
@@ -95,12 +95,3 @@ COMMIT;
 
 SELECT * FROM public.cadop;
 ```
-
-
-
-
-## Contato
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)

@@ -54,9 +54,3 @@ To get a local copy up and running follow these simple example steps.
     ```sh
     node index.js
     ```
-
-## Contato
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
