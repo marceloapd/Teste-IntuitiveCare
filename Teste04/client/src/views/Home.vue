@@ -3,23 +3,23 @@
   <form>
     <div class="form-row">
       <div class="form-group col-md-4">
-        <label for="inputAddress2">Nome Fantasia</label>
+        <label>Nome Fantasia</label>
         <input type="text" class="form-control" v-on:input="nomeFantasia = $event.target.value" placeholder="Nome comercial ou nome de fachada">
       </div>
       <div class="form-group col-md-3">
-        <label for="inputEstado">Modalidade</label>
-        <select id="inputEstado" class="form-control" v-on:input="modalidade = $event.target.value">
+        <label for="inputModalidade">Modalidade</label>
+        <select id="inputModalidade" class="form-control" v-on:input="modalidade = $event.target.value">
           <option value="" selected>Escolher...</option>
           <option v-for="element in allModalidades.result" :key="element">{{element.Modalidade}}</option>
         </select>
       </div>
       <div class="form-group col-md-3">
-        <label for="inputAddress">Razão social</label>
+        <label>Razão social</label>
         <input type="text" class="form-control" v-on:input="razaoSocial = $event.target.value" placeholder="Nome de registro">
       </div>
       <div class="form-group col-md-2">
-        <label for="inputEstado">UF</label>
-        <select id="inputEstado" class="form-control" v-on:input="uf = $event.target.value">
+        <label>UF</label>
+        <select class="form-control" v-on:input="uf = $event.target.value">
           <option value="" selected>Escolher...</option>
           <option v-for="element in allUf.result" :key="element">{{element.UF}}</option>
         </select>
@@ -31,8 +31,8 @@
         <input  class="form-control"  v-on:input="ans = $event.target.value" placeholder="123456">
       </div>
       <div class="form-group col-md-3">
-        <label for="inputPassword4">CNPJ</label>
-        <input type="password" class="form-control" id="inputPassword4" v-on:input="cnpj = $event.target.value" placeholder="XXXXXXXX0001XX">
+        <label>CNPJ</label>
+        <input class="form-control" v-on:input="cnpj = $event.target.value" placeholder="XXXXXXXX0001XX">
       </div>
       <div class="form-group col-md-2">
         <label for="inputCEP">Cidade</label>
@@ -40,7 +40,7 @@
       </div>
       <div class="form-group col-md-2">
         <label for="inputCEP">CEP</label>
-        <input type="text" class="form-control" v-on:input="cep = $event.target.value" placeholder="13165000" id="inputCEP">
+        <input type="number" class="form-control" v-on:input="cep = $event.target.value" placeholder="13165000" id="inputCEP">
       </div>
     </div>
   </form>
@@ -97,9 +97,9 @@ export default{
 
   methods: {
       searchData(){
-      this.$http.get(`http://localhost:3000/search/?RegistroANS=${this.ans}&CNPJ=${this.cnpj}&RazaoSocial=${this.razaoSocial}&NomeFantasia=${this.nomeFantasia}&Modalidade=${this.modalidade}&Logradouro=&Numero=&Complemento=&Bairro=&Cidade=${this.cidade}&UF=${this.uf}&CEP=${this.cep}&DDD=&Telefone=&Fax=&EnderecoEletronico=&Representante=&CargoRepresentante=&DataRegistroANS=`)
-      .then(res => res.json())
-      .then(data => this.data = data)
+        this.$http.get(`http://localhost:3000/search/?RegistroANS=${this.ans}&CNPJ=${this.cnpj}&RazaoSocial=${this.razaoSocial}&NomeFantasia=${this.nomeFantasia}&Modalidade=${this.modalidade}&Logradouro=&Numero=&Complemento=&Bairro=&Cidade=${this.cidade}&UF=${this.uf}&CEP=${this.cep}&DDD=&Telefone=&Fax=&EnderecoEletronico=&Representante=&CargoRepresentante=&DataRegistroANS=`)
+        .then(res => res.json())
+        .then(data => this.data = data)
       }
   },
 

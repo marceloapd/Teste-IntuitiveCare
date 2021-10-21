@@ -25,7 +25,8 @@ module.exports = {
             EnderecoEletronico LIKE :EnderecoEletronico AND
             Representante LIKE :Representante AND
             CargoRepresentante LIKE :CargoRepresentante AND
-            DataRegistroANS LIKE :DataRegistroANS
+            DataRegistroANS LIKE :DataRegistroANS 
+            LIMIT 50;
             `,
 
             {
@@ -57,13 +58,22 @@ module.exports = {
     },
 
     async getAllUf(){
-        let allUF = (await Relatorio.findAll({raw: true, attributes: [[sequelize.literal('DISTINCT `UF`'), 'UF']]})).filter((e) => e.UF)
-        return allUF
+        let allUF = await Relatorio.findAll(
+            {
+                raw: true,
+                attributes: [[sequelize.literal('DISTINCT `UF`'),'UF']]
+            })
+            result = allUF.filter((e) => e.UF)
+        return result
     },
 
     async getAllModalidades(){
-        let allModalidades = (await Relatorio.findAll({raw: true, attributes: [[sequelize.literal('DISTINCT `Modalidade`'), 'Modalidade']]})).filter((e) => e.Modalidade)
-        return allModalidades
+        let allModalidades = await Relatorio.findAll(
+            {raw: true,
+                attributes: [[sequelize.literal('DISTINCT `Modalidade`'), 'Modalidade']]
+            })
+            result = allModalidades.filter((e) => e.Modalidade)
+        return result
     }
 }
 // http://localhost:3000/search/?RegistroANS=&CNPJ=&RazaoSocial=&NomeFantasia=&Modalidade=&Logradouro=&Numero=&Complemento=&Bairro=&Cidade=&UF=&CEP=&DDD=&Telefone=&Fax=&EnderecoEletronico=&Representante=&CargoRepresentante=&DataRegistroANS=
