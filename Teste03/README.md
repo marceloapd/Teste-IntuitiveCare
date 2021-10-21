@@ -7,7 +7,7 @@ Criar scripts sql (MySQL 8.* ou Postgres >10.0) que execute as tarefas de códig
 
 - Baixar CSV do link: http://www.ans.gov.br/externo/site_novo/informacoes_avaliacoes_oper/lista_cadop.asp (pode ser feito manualmente)
 
-####Tarefas de código:
+#### Tarefas de código:
 
 - Queries de load: criar as queries para carregar o conteúdo dos arquivos obtidos nas tarefas de preparação num banco MySQL ou Postgres (Atenção ao encoding dos arquivos!)
 
