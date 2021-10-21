@@ -31,15 +31,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Instalação
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-2. Dentro da pasta client instale as dependências
+1. Dentro da pasta client instale as dependências
     ```sh
     yarn install
     ```
-3. Dentro da pasta server instale as dependências
+2. Dentro da pasta server instale as dependências
    ```sh
    yarn install
    ```
