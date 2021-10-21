@@ -15,5 +15,5 @@ quadro_31 = pd.concat(quadro_31)
 quadro_31.to_csv('documents/Quadro_31.csv',index=False)
 tables[7].to_csv('documents/Quadro_32.csv')
 
-zip_file.zip_file('Teste_Intuitive_Care_Marcelo_Assis.zip', './documents')
+zip_file.zip_file('documents/Teste_Intuitive_Care_Marcelo_Assis.zip', './documents')
 
