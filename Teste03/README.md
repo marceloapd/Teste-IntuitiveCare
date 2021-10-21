@@ -20,7 +20,7 @@ Criar scripts sql (MySQL 8.* ou Postgres >10.0) que execute as tarefas de códig
 
 ### Construido com
 
-* [PostgreSQL](https://www.postgresql.org/)
+* [PostgreSQL 14](https://www.postgresql.org/)
 
 
 ## Começando
@@ -51,7 +51,7 @@ COMMIT;
 
 SELECT * FROM public.relatorio;
 ```
-Repita o codigo acima para cada arquivo dos últimos 2 anos no repositório público, no fim você tera o banco populado com todos os arquivos.
+> Repita o codigo acima para cada arquivo dos últimos 2 anos do repositório público, no fim você tera o banco populado com todos os arquivos.
 
 #### Passo 2
 
