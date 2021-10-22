@@ -97,17 +97,17 @@ export default{
 
   methods: {
       searchData(){
-        this.$http.get(`http://ec2-3-144-13-161.us-east-2.compute.amazonaws.com:3000/search/?RegistroANS=${this.ans}&CNPJ=${this.cnpj}&RazaoSocial=${this.razaoSocial}&NomeFantasia=${this.nomeFantasia}&Modalidade=${this.modalidade}&Logradouro=&Numero=&Complemento=&Bairro=&Cidade=${this.cidade}&UF=${this.uf}&CEP=${this.cep}&DDD=&Telefone=&Fax=&EnderecoEletronico=&Representante=&CargoRepresentante=&DataRegistroANS=`)
+        this.$http.get(`http://localhost:3000/search/?RegistroANS=${this.ans}&CNPJ=${this.cnpj}&RazaoSocial=${this.razaoSocial}&NomeFantasia=${this.nomeFantasia}&Modalidade=${this.modalidade}&Logradouro=&Numero=&Complemento=&Bairro=&Cidade=${this.cidade}&UF=${this.uf}&CEP=${this.cep}&DDD=&Telefone=&Fax=&EnderecoEletronico=&Representante=&CargoRepresentante=&DataRegistroANS=`)
         .then(res => res.json())
         .then(data => this.data = data)
       }
   },
 
   created(){
-      this.$http.get('http://ec2-3-144-13-161.us-east-2.compute.amazonaws.com:3000/search/uf')
+      this.$http.get('http://localhost:3000/search/uf')
       .then(res => res.json())
       .then(data => this.allUf = data)
-      this.$http.get('http://ec2-3-144-13-161.us-east-2.compute.amazonaws.com:3000/search/modalidades')
+      this.$http.get('http://localhost:3000/search/modalidades')
       .then(res => res.json())
       .then(data => this.allModalidades = data)
   }
