@@ -14,6 +14,6 @@ publicRoutes = [
 ] 
 
 
-app.listen(443);
+app.listen(3000);
 
 console.log('Server is runing http://localhost:3000/search')
