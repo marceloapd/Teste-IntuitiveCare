@@ -20,7 +20,7 @@ Tarefas de código:
 2 - Buscar a versão mais recente do Padrão TISS (arquivo - padrao_tiss_componente_organizacional_201902.pdf);
 3 - Baixar o componente organizacional;
 </pre>
-<a href="https://pandas.pydata.org/">Abrir Teste 01</a>
+<a href="https://github.com/marceloapd/Teste-IntuitiveCare/tree/master/Teste01">Abrir Teste 01</a>
 </details>
 
 <details>
@@ -34,7 +34,7 @@ Tarefas de código:
 2 - Salvar dados em tabelas estruturadas, em csvs;
 3 - Zipar todos os csvs num arquivo "Teste_Intuitive_Care_{seu_nome}.zip".
 </pre>
-<a href="https://pandas.pydata.org/">Abrir Teste 02</a>
+<a href="https://github.com/marceloapd/Teste-IntuitiveCare/tree/master/Teste02">Abrir Teste 02</a>
 </details>
 
 <details>
@@ -60,7 +60,7 @@ banco MySQL ou Postgres
 - Quais as 10 operadoras que mais tiveram despesas com: 
 "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS  DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último trimestre e no último ano?
 </pre>
-<a href="https://pandas.pydata.org/">Abrir Teste 03</a>
+<a href="https://github.com/marceloapd/Teste-IntuitiveCare/tree/master/Teste03">Abrir Teste 03</a>
 </details>
 
 <details>
@@ -74,7 +74,7 @@ Tarefas de código:
 2 - Criar servidor com rota que realiza uma busca textual no csv e retorne as linhas que mais se assemelham
 3 - Criar uma interface usando o framework Vue.js que permita a um usuário fazer essa pesquisa pelo browser
 </pre>
-<a href="https://pandas.pydata.org/">Abrir Teste 04</a>
+<a href="https://github.com/marceloapd/Teste-IntuitiveCare/tree/master/Teste04">Abrir Teste 04</a>
 </details>
 
 ## 💻 Requisitos
