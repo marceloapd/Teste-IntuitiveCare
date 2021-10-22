@@ -5,7 +5,7 @@
 
 <img src="https://user-images.githubusercontent.com/71731452/138391600-4d6036de-c934-4f3d-987d-827d3f9e5a08.gif" alt="exemplo imagem">
 
-> Esta etapa do processo seletivo consiste na realização de testes de nivelamento básico. Estes testes foram desenhados em função de tarefas realizadas no dia a dia da empresa e têm como objetivo avaliar:
+> Esta etapa do processo seletivo consiste na realização de testes de nivelamento básico. Estes testes foram desenhados em função de tarefas realizadas no dia a dia da empresa.
 
 ### Testes
 
