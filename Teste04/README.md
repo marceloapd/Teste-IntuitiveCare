@@ -7,7 +7,7 @@
 - Criar uma interface usando o framework Vue.js que permita a um usuário fazer essa pesquisa pelo browser
     
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/71731452/138379205-168b5fdc-1ba5-4929-a3c2-4448b25924c9.gif" width="700" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/71731452/138390993-2b1e8ee4-11cf-4cb6-8792-487fede8ab21.gif" width="700" alt="Sublime's custom image"/>
 </p>
 
     
